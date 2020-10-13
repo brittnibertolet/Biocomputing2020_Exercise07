@@ -9,7 +9,7 @@
 
 # Usage: head(x, n = y )
   # x <- data.frame
-  # y <- number.of.lines.to.be.returnedL
+  # y <- number.of.lines.to.be.returned
 
 x <- iris
 y <- 10
