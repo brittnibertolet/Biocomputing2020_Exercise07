@@ -6,8 +6,8 @@ head(dataset, number)
 
 #2
 #a: print last 2 rows in last 2 columns to R ??????
-last2rows=tail(dataset,2)
-last2columns=last2rows[,-1:-3]
+iris_data = read.csv(file = "iris.csv", header = FALSE)
+iris_data[150:151, 4:5]
            
 #b: get number of observations for each species in dataset 
 occurrences<-table(unlist(dataset[, 5]))
