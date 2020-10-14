@@ -39,10 +39,10 @@ read.csv("setosa.csv")
 #part 5: calculate the mean, minimum, and maximum of Petal.Length for obervations from virginica
 #define a variable with only petal length observations for virginica
 virginicapetal=data[data[,5]=="virginica",3 ] 
-#calculate mean
+#calculate mean = 5.552
 mean(virginicapetal)
-#calculate minimum
+#calculate minimum = 4.5
 min(virginicapetal)
-#calculate maximum
+#calculate maximum = 6.9
 max(virginicapetal)
 
