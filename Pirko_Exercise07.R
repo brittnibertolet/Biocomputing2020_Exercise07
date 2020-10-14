@@ -5,7 +5,7 @@ number=10
 head(dataset, number)
 
 #2
-#a: print last 2 rows in last 2 columns to R ??????
+#a: print last 2 rows in last 2 columns to R 
 iris_data = read.csv(file = "iris.csv", header = FALSE)
 iris_data[150:151, 4:5]
            
