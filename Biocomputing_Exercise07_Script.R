@@ -1,11 +1,12 @@
-setwd("/Users/Walker/Desktop/Biocomputing_R")
+setwd("/Users/Walker/Desktop/Biocomputing_R/Biocomputing2020_Exercise07")
+iris <- read.csv("iris.csv") #reads iris file
 x <- iris # defines x as file to return lines from 
 y=2 # defines y as number of lines to be returned
 x[1:y,] #returns "y" lines from "x"
 
 
 
-iris <- read.csv("iris.csv") # start of problem 2
+ # start of problem 2
 tail(iris,2)[,4:5] #returns last 2 rows of last 2 columns
 table(iris$Species) #shows the number of samples for each species
 subset(x=iris, iris$Sepal.Width > 3.5) #shows all observations that had Sepal Width >3.5 
