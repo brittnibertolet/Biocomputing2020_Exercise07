@@ -5,7 +5,6 @@
 #set the file you would like to pull the amount of lines from as the var
 #your_file and read in your file 
 your_file <- "iris.csv"
-setwd("/Users/kevinmichael/Desktop/BioComp/data-shell/Biocomputing2020_Exercise07")
 dat <- read.table(file=your_file, header=T, sep=",")
 
 #now, set how many lines you would like to see
@@ -34,7 +33,7 @@ num_verginica <- sum(dat$Species=="virginica")
 
 # part C
 # Get rows with sepal.width >3.5
-dat[dat[ ,2]>3.5, ]
+print(dat[dat[ ,2]>3.5, ])
 
 # part D
 # write the data for the species setosa to a comma-delimited file named "setosa.csv"
