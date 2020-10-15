@@ -1,4 +1,4 @@
-setwd("/Users/Walker/Desktop/Biocomputing_R/Biocomputing2020_Exercise07")
+setwd("/Users/Walker/Desktop/Biocomputing_R/Biocomputing2020_Exercise07") #setwd
 iris <- read.csv("iris.csv") #reads iris file
 x <- iris # defines x as file to return lines from 
 y=2 # defines y as number of lines to be returned
