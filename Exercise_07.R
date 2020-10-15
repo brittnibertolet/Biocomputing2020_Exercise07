@@ -14,3 +14,14 @@ lines <- 7
 head <- df[1:lines, ]
 #now print 
 print(head)
+
+
+#Number Two
+
+
+
+#part B
+#to find the number of each species we subset on species and sum all occurences
+num_setosa <- sum(df$Species=="setosa")
+num_versicolor <- sum(df$Species=="versicolor")
+num_verginica <- sum(df$Species=="virginica")
