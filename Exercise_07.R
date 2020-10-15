@@ -9,7 +9,7 @@ setwd("/Users/kevinmichael/Desktop/BioComp/data-shell/Biocomputing2020_Exercise0
 df <- read.table(file=your_file, header=T, sep=",")
 
 #now, set how many lines you would like to see
-#we use 5 as an arbitrary example
+#we use 7 as an arbitrary example
 lines <- 7
 head <- df[1:lines, ]
 #now print 
