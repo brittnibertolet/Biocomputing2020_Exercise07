@@ -6,7 +6,7 @@
 #your_file and read in your file 
 your_file <- "iris.csv"
 setwd("/Users/kevinmichael/Desktop/BioComp/data-shell/Biocomputing2020_Exercise07")
-df <- read.table(file=your_file, header=T, sep=" ")
+df <- read.table(file=your_file, header=T, sep=",")
 
 #now, set how many lines you would like to see
 #we use 5 as an arbitrary example
