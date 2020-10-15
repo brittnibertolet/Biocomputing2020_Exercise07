@@ -41,6 +41,7 @@ dat[dat[ ,2]>3.5, ]
 setosa_dat<-dat[dat[ ,5]=="setosa",]
 write.csv(setosa_dat,file="setosa.csv",row.names=FALSE)
 
+# part E
 #to find the mean min and max, we subset on species virginica and find each parameter
 virginica <- subset(dat, df$Species=="virginica")
 mean(virginica$Petal.Length)
