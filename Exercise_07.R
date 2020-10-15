@@ -18,15 +18,23 @@ print(head)
 
 #Number Two
 
+# part A
+# read data frame from iris.csv
+read.csv(file = "iris.csv", header = TRUE, Sep = ",")
+# rename iris.csv dat
+dat <- read.csv(file = "iris.csv", header = TRUE, Sep = ",")
+# print the last two rows in the last two columns to R terminal
+print(dat[(nrow(dat)-1):nrow(dat), (ncol(dat)-1):ncol(dat)])
 
-
-#part B
+# part B
 #to find the number of each species we subset on species and sum all occurences
 num_setosa <- sum(df$Species=="setosa")
 num_versicolor <- sum(df$Species=="versicolor")
 num_verginica <- sum(df$Species=="virginica")
 
-
+# part C
+# Get rows with sepal.width >3.5
+dat[dat[ ,2]>3.5, ]
 
 # part D
 # write the data for the species setosa to a comma-delimited file named "setosa.csv"
