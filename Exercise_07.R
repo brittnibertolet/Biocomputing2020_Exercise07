@@ -25,3 +25,10 @@ print(head)
 num_setosa <- sum(df$Species=="setosa")
 num_versicolor <- sum(df$Species=="versicolor")
 num_verginica <- sum(df$Species=="virginica")
+
+
+
+# part D
+# write the data for the species setosa to a comma-delimited file named "setosa.csv"
+setosa_dat<-dat[dat[ ,5]=="setosa",]
+write.csv(setosa_dat,file="setosa.csv",row.names=FALSE)
