@@ -1,0 +1,36 @@
+#Problem1 
+filename <- read.csv(file="iris.csv") #for example's sake, I have 
+#used iris.csv, but this is replaced with whatever respective filename
+#desired by the user
+print(filename)
+row <- 1
+filename[row,]
+
+#Problem2
+irisdata <- read.csv(file="iris.csv")
+##Print last two rows in last two columns
+last2s=irisdata[149:150,4:5]
+print(last2s)
+##number of observations for each species
+virginica=irisdata[irisdata[,5]=="virginica", ]
+length(virginica [,5])
+versicolor=irisdata[irisdata[,5]=="versicolor", ]
+length(versicolor [,5])
+setosa=irisdata[irisdata[,5]== "setosa", ]
+length(setosa [,5])
+
+##rows with Sepal.Width > 3.5
+irisdata[irisdata[,2]>3.5,]
+
+##data for species setosa to comma-deliminated file named 'setosa.csv'
+setosa=irisdata[irisdata[,5]=="setosa", ]
+unique(setosa)
+
+
+##mean, min, max of Petal.Length observations from virginica
+a new line
+virginica=irisdata[irisdata[,5]=="virginica", ]
+unique(virginica)
+mean(virginica [,3])
+min(virginica [,3])
+max(virginica [,3])
